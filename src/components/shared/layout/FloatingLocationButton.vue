@@ -15,11 +15,7 @@ import MaterialIcon from '../ui/MaterialIcon.vue'
  * Botón flotante para ubicación
  * Responsabilidad única: Abrir mapa de ubicación
  */
-const emit = defineEmits(['click'])
-
 const handleClick = () => {
-  emit('click')
-  // Aquí se podría abrir Google Maps o un modal con la dirección
-  console.log('Abrir ubicación')
+  window.open('https://maps.app.goo.gl/57CP6CHqr7rGSWJKA', '_blank', 'noopener,noreferrer')
 }
 </script>

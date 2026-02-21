@@ -67,7 +67,7 @@ const props = defineProps({
   },
   backgroundImage: {
     type: String,
-    default: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB1LKBtvrItSAjX35lwU00FYvsJeemc_0sB4Rv-j5GDyT1XQCfRyiBFW2TlmwYBy784xDM3L_1aBVgwvSvuKuF2ILbJjNeCc9xc544zXkx7fRUAyW8nkNUhHnSGupv6llD6zJlhVFvwblUxP6Z7z_FvfXEsUIOvi5ysCKtg4Vq08iQFh_pZtxhpdEegR8rd-8pSZMqzSuBdgYklw-EyrwGfWsRKYORavJyZcwQdlT1-egb1PR8SdHjyJmtLPt-hGswGpdu2LmzxJ5rv',
+    default: '/Fondo-3.png',
   },
   backgroundAlt: {
     type: String,

@@ -1,7 +1,7 @@
 export const socialMedia = {
-  facebook: 'https://facebook.com',
+  facebook: 'https://www.facebook.com/caminodesantidad.ib',
   instagram: 'https://instagram.com',
-  youtube: 'https://youtube.com',
+  youtube: 'https://www.youtube.com/channel/UCyiPrDHsrqDBVnWQzNEkBRQ',
   twitter: 'https://twitter.com',
 }
 

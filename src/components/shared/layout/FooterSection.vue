@@ -4,11 +4,11 @@
       <div class="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
         <!-- Brand -->
         <div class="space-y-6">
-          <div class="flex items-center gap-3">
+          <div class="space-y-4">
             <img
-              src="/IMG_3090.PNG"
+              src="/IMG_3096.PNG"
               alt="Logo Iglesia Bíblica Camino de Santidad"
-              class="h-10 w-10 object-contain"
+              class="w-40 h-auto object-contain"
             />
             <h2 class="text-2xl font-bold tracking-tight">Iglesia Bíblica Camino de Santidad</h2>
           </div>
@@ -23,8 +23,11 @@
               target="_blank"
               rel="noopener noreferrer"
               class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-white/20"
+              :title="link.text"
             >
-              <MaterialIcon name="social_leaderboard" class-name="text-xl" />
+              <i v-if="link.text === 'Facebook'" class="fab fa-facebook-f text-lg"></i>
+              <i v-else-if="link.text === 'YouTube'" class="fab fa-youtube text-lg"></i>
+              <i v-else class="fas fa-link text-lg"></i>
             </a>
           </div>
         </div>
@@ -52,7 +55,7 @@
           <h3 class="mb-6 text-lg font-bold">Contáctanos</h3>
           <ul class="space-y-3 text-sm text-slate-300">
             <li v-for="link in footerLinks.contact" :key="link.text" class="flex gap-2">
-              <MaterialIcon name="location_on" class-name="text-base text-white/70" />
+              <MaterialIcon :name="getContactIcon(link.text)" class-name="text-base text-white/70" />
               <component
                 :is="link.path ? 'router-link' : 'a'"
                 :to="link.path"
@@ -110,4 +113,19 @@ import { footerLinks } from '../../../constants/navigation'
  * Responsabilidad: Links de navegación y copyright
  */
 const currentYear = computed(() => new Date().getFullYear())
+
+const getSocialIcon = (text) => {
+  const iconMap = {
+    'Facebook': 'thumb_up',
+    'YouTube': 'play_circle',
+  }
+  return iconMap[text] || 'link'
+}
+
+const getContactIcon = (text) => {
+  if (text.includes('Agustín Melgar') || text === 'Ubicación') return 'location_on'
+  if (text === 'YouTube') return 'play_circle'
+  if (text === 'Donar') return 'volunteer_activism'
+  return 'link'
+}
 </script>

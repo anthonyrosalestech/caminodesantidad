@@ -13,14 +13,12 @@ export const footerLinks = {
     { text: 'Ministerios', path: '/ministerios' },
   ],
   contact: [
-    { text: 'Ubicación', path: '/ubicacion' },
-    { text: 'YouTube', href: 'https://youtube.com' },
-    { text: 'Donar', path: '/donar' },
+    { text: 'Agustín Melgar 310 Niños Héroes, Colima, Mexico, 28025', href: 'https://maps.app.goo.gl/57CP6CHqr7rGSWJKA' },
+    { text: 'YouTube', href: 'https://www.youtube.com/channel/UCyiPrDHsrqDBVnWQzNEkBRQ' },
   ],
   social: [
-    { text: 'Facebook', href: 'https://facebook.com' },
-    { text: 'Instagram', href: 'https://instagram.com' },
-    { text: 'YouTube', href: 'https://youtube.com' },
+    { text: 'Facebook', href: 'https://www.facebook.com/caminodesantidad.ib' },
+    { text: 'YouTube', href: 'https://www.youtube.com/channel/UCyiPrDHsrqDBVnWQzNEkBRQ' },
   ],
   legal: [
     { text: 'Privacidad', path: '/privacidad' },
