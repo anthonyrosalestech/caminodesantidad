@@ -52,8 +52,7 @@ const handleJoinClick = () => {
 }
 
 const handleLiveClick = () => {
-  console.log('Live service button clicked')
-  // Navegar a página de transmisión en vivo
+  window.open('https://www.facebook.com/caminodesantidad.ib/live', '_blank', 'noopener,noreferrer')
 }
 
 const handleLocationClick = () => {

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden sm:min-h-[78vh] lg:min-h-[85vh]">
+  <section class="relative flex min-h-[90vh] items-center justify-center overflow-hidden sm:min-h-[78vh] lg:min-h-[85vh]">
     <div class="absolute inset-0">
       <img
         :src="backgroundImage"

@@ -114,7 +114,7 @@ onMounted(async () => {
 
   // Update page title
   if (course.value) {
-    document.title = `${course.value.title} - Cursos - Iglesia Bautista`
+    document.title = `${course.value.title} - Cursos - Iglesia Bíblica Camino de Santidad`
   }
 })
 

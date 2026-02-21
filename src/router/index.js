@@ -7,8 +7,8 @@ const routes = [
     name: 'Home',
     component: HomeView,
     meta: {
-      title: 'Inicio - Iglesia Bautista',
-      description: 'Bienvenidos a la Iglesia Bautista. Un lugar para crecer en fe, esperanza y amor.',
+      title: 'Inicio - Iglesia Bíblica Camino de Santidad',
+      description: 'Bienvenidos a la Iglesia Bíblica Camino de Santidad. Un lugar para crecer en fe, esperanza y amor.',
     },
   },
   {
@@ -16,7 +16,7 @@ const routes = [
     name: 'About',
     component: () => import('../views/AboutView.vue'),
     meta: {
-      title: 'Nosotros - Iglesia Bautista',
+      title: 'Nosotros - Iglesia Bíblica Camino de Santidad',
       description: 'Conoce nuestra historia, misión, visión y equipo pastoral.',
     },
   },
@@ -25,7 +25,7 @@ const routes = [
     name: 'Courses',
     component: () => import('../views/CoursesView.vue'),
     meta: {
-      title: 'Cursos - Iglesia Bautista',
+      title: 'Cursos - Iglesia Bíblica Camino de Santidad',
       description: 'Explora nuestros cursos bíblicos y de formación cristiana.',
     },
   },
@@ -34,7 +34,7 @@ const routes = [
     name: 'CourseDetail',
     component: () => import('../views/CourseDetailView.vue'),
     meta: {
-      title: 'Curso - Iglesia Bautista',
+      title: 'Curso - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -42,7 +42,7 @@ const routes = [
     name: 'Ministries',
     component: () => import('../views/MinistriesView.vue'),
     meta: {
-      title: 'Ministerios - Iglesia Bautista',
+      title: 'Ministerios - Iglesia Bíblica Camino de Santidad',
       description: 'Descubre los diferentes ministerios y cómo puedes participar.',
     },
   },
@@ -51,7 +51,7 @@ const routes = [
     name: 'Contact',
     component: () => import('../views/ContactView.vue'),
     meta: {
-      title: 'Contacto - Iglesia Bautista',
+      title: 'Contacto - Iglesia Bíblica Camino de Santidad',
       description: 'Ponte en contacto con nosotros.',
     },
   },
@@ -60,7 +60,7 @@ const routes = [
     name: 'Location',
     component: () => import('../views/LocationView.vue'),
     meta: {
-      title: 'Ubicación - Iglesia Bautista',
+      title: 'Ubicación - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -68,7 +68,7 @@ const routes = [
     name: 'Donate',
     component: () => import('../views/DonateView.vue'),
     meta: {
-      title: 'Donar - Iglesia Bautista',
+      title: 'Donar - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -76,7 +76,7 @@ const routes = [
     name: 'LiveStream',
     component: () => import('../views/LiveStreamView.vue'),
     meta: {
-      title: 'Transmisión en Vivo - Iglesia Bautista',
+      title: 'Transmisión en Vivo - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -84,7 +84,7 @@ const routes = [
     name: 'Events',
     component: () => import('../views/EventsView.vue'),
     meta: {
-      title: 'Eventos - Iglesia Bautista',
+      title: 'Eventos - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -93,7 +93,7 @@ const routes = [
     component: () => import('../views/LegalView.vue'),
     props: { type: 'privacy' },
     meta: {
-      title: 'Política de Privacidad - Iglesia Bautista',
+      title: 'Política de Privacidad - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -102,7 +102,7 @@ const routes = [
     component: () => import('../views/LegalView.vue'),
     props: { type: 'terms' },
     meta: {
-      title: 'Términos de Uso - Iglesia Bautista',
+      title: 'Términos de Uso - Iglesia Bíblica Camino de Santidad',
     },
   },
   {
@@ -129,7 +129,7 @@ const router = createRouter({
 
 // Actualizar título de la página
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || 'Iglesia Bautista'
+  document.title = to.meta.title || 'Iglesia Bíblica Camino de Santidad'
   next()
 })
 

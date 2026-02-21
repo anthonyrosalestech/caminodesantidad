@@ -14,7 +14,7 @@
           <div v-if="type === 'privacy'">
             <h2 class="text-2xl font-bold mb-4">Política de Privacidad</h2>
             <p class="mb-4 text-gray-600">
-              En Iglesia Bautista, nos comprometemos a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tu información personal.
+              En Iglesia Bíblica Camino de Santidad, nos comprometemos a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tu información personal.
             </p>
             <h3 class="text-xl font-bold mb-3 mt-6">Información que Recopilamos</h3>
             <p class="mb-4 text-gray-600">
@@ -41,7 +41,7 @@
             </p>
             <h3 class="text-xl font-bold mb-3 mt-6">Propiedad Intelectual</h3>
             <p class="mb-4 text-gray-600">
-              Todo el contenido del sitio es propiedad de Iglesia Bautista y está protegido por leyes de derechos de autor.
+              Todo el contenido del sitio es propiedad de Iglesia Bíblica Camino de Santidad y está protegido por leyes de derechos de autor.
             </p>
             <h3 class="text-xl font-bold mb-3 mt-6">Limitación de Responsabilidad</h3>
             <p class="mb-4 text-gray-600">

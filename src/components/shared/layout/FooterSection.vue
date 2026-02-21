@@ -5,8 +5,12 @@
         <!-- Brand -->
         <div class="space-y-6">
           <div class="flex items-center gap-3">
-            <MaterialIcon name="church" class-name="text-3xl" />
-            <h2 class="text-2xl font-bold tracking-tight">Iglesia Bautista</h2>
+            <img
+              src="/IMG_3090.PNG"
+              alt="Logo Iglesia Bíblica Camino de Santidad"
+              class="h-10 w-10 object-contain"
+            />
+            <h2 class="text-2xl font-bold tracking-tight">Iglesia Bíblica Camino de Santidad</h2>
           </div>
           <p class="text-sm leading-relaxed text-slate-300">
             Una comunidad unida por el amor de Cristo, dedicada a glorificar a Dios y bendecir a nuestra ciudad.
@@ -80,7 +84,7 @@
       </div>
 
       <div class="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-300 md:flex-row">
-        <p>© {{ currentYear }} Iglesia Bautista. Todos los derechos reservados.</p>
+        <p>© {{ currentYear }} Iglesia Bíblica Camino de Santidad. Todos los derechos reservados.</p>
         <div class="flex gap-6">
           <router-link
             v-for="link in footerLinks.legal"
