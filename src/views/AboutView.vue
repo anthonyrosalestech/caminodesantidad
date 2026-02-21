@@ -31,15 +31,15 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
-import NavBar from '../components/layout/NavBar.vue'
-import FooterSection from '../components/layout/FooterSection.vue'
-import FloatingLocationButton from '../components/layout/FloatingLocationButton.vue'
-import AboutHero from '../components/about/AboutHero.vue'
-import MissionVisionCards from '../components/about/MissionVisionCards.vue'
-import HistorySection from '../components/about/HistorySection.vue'
-import ValuesGrid from '../components/about/ValuesGrid.vue'
-import PastoralTeam from '../components/about/PastoralTeam.vue'
-import FaithStatement from '../components/about/FaithStatement.vue'
+import NavBar from '../components/shared/layout/NavBar.vue'
+import FooterSection from '../components/shared/layout/FooterSection.vue'
+import FloatingLocationButton from '../components/shared/layout/FloatingLocationButton.vue'
+import AboutHero from '../modules/about/components/AboutHero.vue'
+import MissionVisionCards from '../modules/about/components/MissionVisionCards.vue'
+import HistorySection from '../modules/about/components/HistorySection.vue'
+import ValuesGrid from '../modules/about/components/ValuesGrid.vue'
+import PastoralTeam from '../modules/about/components/PastoralTeam.vue'
+import FaithStatement from '../modules/about/components/FaithStatement.vue'
 
 /**
  * Vista Nosotros/About

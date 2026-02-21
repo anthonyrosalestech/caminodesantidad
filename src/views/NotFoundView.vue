@@ -26,10 +26,10 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
-import NavBar from '../components/layout/NavBar.vue'
-import FooterSection from '../components/layout/FooterSection.vue'
-import MaterialIcon from '../components/common/MaterialIcon.vue'
-import AppButton from '../components/common/AppButton.vue'
+import NavBar from '../components/shared/layout/NavBar.vue'
+import FooterSection from '../components/shared/layout/FooterSection.vue'
+import MaterialIcon from '../components/shared/ui/MaterialIcon.vue'
+import AppButton from '../components/shared/ui/AppButton.vue'
 
 /**
  * Vista 404 - Página no encontrada

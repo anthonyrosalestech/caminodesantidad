@@ -64,10 +64,10 @@
 
 <script setup>
 import { computed } from 'vue'
-import NavBar from '../components/layout/NavBar.vue'
-import FooterSection from '../components/layout/FooterSection.vue'
-import PageHero from '../components/common/PageHero.vue'
-import Card from '../components/common/Card.vue'
+import NavBar from '../components/shared/layout/NavBar.vue'
+import FooterSection from '../components/shared/layout/FooterSection.vue'
+import PageHero from '../components/shared/ui/PageHero.vue'
+import Card from '../components/shared/ui/Card.vue'
 
 const props = defineProps({
   type: {

@@ -27,11 +27,11 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
-import NavBar from '../components/layout/NavBar.vue'
-import FooterSection from '../components/layout/FooterSection.vue'
-import FloatingLocationButton from '../components/layout/FloatingLocationButton.vue'
-import PageHero from '../components/common/PageHero.vue'
-import MaterialIcon from '../components/common/MaterialIcon.vue'
+import NavBar from '../components/shared/layout/NavBar.vue'
+import FooterSection from '../components/shared/layout/FooterSection.vue'
+import FloatingLocationButton from '../components/shared/layout/FloatingLocationButton.vue'
+import PageHero from '../components/shared/ui/PageHero.vue'
+import MaterialIcon from '../components/shared/ui/MaterialIcon.vue'
 
 const router = useRouter()
 const handleMenuToggle = (isOpen) => console.log('Menu toggled:', isOpen)

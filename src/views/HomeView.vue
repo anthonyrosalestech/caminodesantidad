@@ -27,13 +27,13 @@
 </template>
 
 <script setup>
-import NavBar from '../components/layout/NavBar.vue'
-import FooterSection from '../components/layout/FooterSection.vue'
-import FloatingLocationButton from '../components/layout/FloatingLocationButton.vue'
-import HeroSection from '../components/home/HeroSection.vue'
-import VisionSection from '../components/home/VisionSection.vue'
-import ScheduleSection from '../components/home/ScheduleSection.vue'
-import CoursesSection from '../components/home/CoursesSection.vue'
+import NavBar from '../components/shared/layout/NavBar.vue'
+import FooterSection from '../components/shared/layout/FooterSection.vue'
+import FloatingLocationButton from '../components/shared/layout/FloatingLocationButton.vue'
+import HeroSection from '../modules/home/components/HeroSection.vue'
+import VisionSection from '../modules/home/components/VisionSection.vue'
+import ScheduleSection from '../modules/home/components/ScheduleSection.vue'
+import CoursesSection from '../modules/home/components/CoursesSection.vue'
 
 /**
  * Vista principal Home

@@ -49,14 +49,14 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import NavBar from '../components/layout/NavBar.vue'
-import FooterSection from '../components/layout/FooterSection.vue'
-import FloatingLocationButton from '../components/layout/FloatingLocationButton.vue'
-import SectionTitle from '../components/common/SectionTitle.vue'
-import MinistriesHero from '../components/ministries/MinistriesHero.vue'
-import MinistryCard from '../components/ministries/MinistryCard.vue'
-import MinistryDetail from '../components/ministries/MinistryDetail.vue'
-import JoinMinistryBanner from '../components/ministries/JoinMinistryBanner.vue'
+import NavBar from '../components/shared/layout/NavBar.vue'
+import FooterSection from '../components/shared/layout/FooterSection.vue'
+import FloatingLocationButton from '../components/shared/layout/FloatingLocationButton.vue'
+import SectionTitle from '../components/shared/ui/SectionTitle.vue'
+import MinistriesHero from '../modules/ministries/components/MinistriesHero.vue'
+import MinistryCard from '../modules/ministries/components/MinistryCard.vue'
+import MinistryDetail from '../modules/ministries/components/MinistryDetail.vue'
+import JoinMinistryBanner from '../modules/ministries/components/JoinMinistryBanner.vue'
 import { useMinistries } from '../composables/useMinistries'
 
 const router = useRouter()

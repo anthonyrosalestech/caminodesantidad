@@ -5,9 +5,15 @@
 ```
 src/
 ├── components/
-│   ├── common/          # Componentes reutilizables (botones, iconos)
-│   ├── layout/          # Componentes de estructura (navbar, footer)
-│   └── home/            # Componentes específicos de la vista Home
+│   └── shared/
+│       ├── ui/          # Componentes reutilizables (botones, iconos, cards)
+│       └── layout/      # Componentes de estructura (navbar, footer, floating)
+├── modules/
+│   ├── home/components/         # Componentes específicos de Home
+│   ├── about/components/        # Componentes específicos de Nosotros
+│   ├── courses/components/      # Componentes específicos de Cursos
+│   ├── course-detail/components/ # Componentes específicos de Detalle de curso
+│   └── ministries/components/   # Componentes específicos de Ministerios
 ├── composables/         # Lógica reutilizable (hooks de Vue)
 ├── views/               # Vistas/páginas principales
 ├── assets/              # Recursos estáticos
@@ -64,22 +70,24 @@ Los componentes dependen de abstracciones (composables) no de implementaciones c
 
 ## Componentes
 
-### Common (Reutilizables)
+### Shared UI (Reutilizables)
 - **MaterialIcon**: Wrapper para iconos de Material Symbols
 - **AppButton**: Botón con variantes y estados
+- **Card**: Contenedor con estilos consistentes
+- **PageHero**: Hero reutilizable para páginas
+- **SectionTitle**: Títulos de secciones consistentes
 
-### Layout (Estructura)
+### Shared Layout (Estructura)
 - **NavBar**: Barra de navegación sticky
 - **FooterSection**: Footer con links y copyright
 - **FloatingLocationButton**: Botón flotante de ubicación
 
-### Home (Específicos)
-- **HeroSection**: Banner principal con CTA
-- **VisionSection**: Sección de visión/misión
-- **ScheduleSection**: Lista de horarios semanales
-- **ScheduleItem**: Item individual de horario
-- **CoursesSection**: Lista de cursos
-- **CourseCard**: Tarjeta de curso individual
+### Modules (Componentes por vista)
+- **home**: Hero, visión, horarios y cursos destacados
+- **about**: Historia, misión/visión, valores y equipo pastoral
+- **courses**: Listado, filtros y destacados
+- **course-detail**: Secciones de detalle del curso
+- **ministries**: Secciones y cards de ministerios
 
 ## Mobile-First
 
