@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 md:py-20 bg-white dark:bg-background-dark">
+  <section class="py-12 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4">
       <SectionTitle title="Nuestra Historia" size="xl" class="text-center mb-12" />
 
@@ -39,10 +39,10 @@
                     <MaterialIcon :name="event.icon" />
                   </div>
                   <div class="flex-1">
-                    <h3 class="text-xl font-bold text-[#111418] dark:text-white mb-2">
+                    <h3 class="text-xl font-bold text-[#111418] mb-2">
                       {{ event.title }}
                     </h3>
-                    <p class="text-gray-600 dark:text-gray-300">
+                    <p class="text-gray-600">
                       {{ event.description }}
                     </p>
                   </div>

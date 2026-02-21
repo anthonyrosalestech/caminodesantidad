@@ -9,7 +9,7 @@
           :key="index"
           :href="material.url"
           :download="material.name"
-          class="flex items-center justify-between rounded-lg border border-gray-200 p-4 transition-all hover:border-primary hover:bg-gray-50 dark:border-gray-700 dark:hover:border-primary dark:hover:bg-gray-800/50"
+          class="flex items-center justify-between rounded-lg border border-gray-200 p-4 transition-all hover:border-primary hover:bg-gray-50"
         >
           <div class="flex items-center gap-4">
             <!-- File Icon -->
@@ -22,10 +22,10 @@
 
             <!-- File Info -->
             <div>
-              <h4 class="font-semibold text-[#111418] dark:text-white">
+              <h4 class="font-semibold text-[#111418]">
                 {{ material.name }}
               </h4>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <p class="text-sm text-gray-500">
                 {{ material.type }} • {{ material.size }}
               </p>
             </div>
@@ -42,14 +42,14 @@
       </div>
 
       <!-- Info Banner -->
-      <div class="mt-6 rounded-lg bg-green-50 p-4 dark:bg-green-900/20">
+      <div class="mt-6 rounded-lg bg-green-50 p-4">
         <div class="flex gap-3">
-          <MaterialIcon name="verified" class-name="text-xl text-green-600 dark:text-green-400" />
+          <MaterialIcon name="verified" class-name="text-xl text-green-600" />
           <div class="flex-1">
-            <p class="text-sm font-semibold text-green-900 dark:text-green-300">
+            <p class="text-sm font-semibold text-green-900">
               Acceso gratuito a todos los materiales
             </p>
-            <p class="mt-1 text-sm text-green-700 dark:text-green-400">
+            <p class="mt-1 text-sm text-green-700">
               Todos los recursos están disponibles para descargar sin costo alguno. 
               Podrás acceder a ellos en cualquier momento, incluso después de completar el curso.
             </p>

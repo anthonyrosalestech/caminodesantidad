@@ -6,17 +6,17 @@
     <div v-if="isLoading" class="flex min-h-screen items-center justify-center">
       <div class="text-center">
         <MaterialIcon name="hourglass_empty" class-name="mb-4 animate-spin text-6xl text-primary" />
-        <p class="text-gray-600 dark:text-gray-300">Cargando curso...</p>
+        <p class="text-gray-600">Cargando curso...</p>
       </div>
     </div>
 
     <!-- Error State (404) -->
     <div v-else-if="!course" class="flex min-h-screen flex-col items-center justify-center p-8">
-      <MaterialIcon name="search_off" class-name="mb-4 text-8xl text-gray-300 dark:text-gray-600" />
-      <h2 class="mb-2 text-2xl font-bold text-[#111418] dark:text-white">
+      <MaterialIcon name="search_off" class-name="mb-4 text-8xl text-gray-300" />
+      <h2 class="mb-2 text-2xl font-bold text-[#111418]">
         Curso no encontrado
       </h2>
-      <p class="mb-6 text-gray-600 dark:text-gray-300">
+      <p class="mb-6 text-gray-600">
         El curso que buscas no existe o ha sido eliminado.
       </p>
       <AppButton variant="primary" @click="router.push('/cursos')">

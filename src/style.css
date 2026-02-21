@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 @theme {
-  --color-primary: #0f66bd;
+  --color-primary: rgb(47 65 86 / 0.9);
   --color-accent-gold: #d4af37;
   --color-background-light: #f6f7f8;
-  --color-background-dark: #101922;
   
   --font-display: 'Lexend', sans-serif;
 }
@@ -15,8 +14,4 @@ body {
   background-color: var(--color-background-light);
   transition: colors 300ms;
   min-height: max(884px, 100dvh);
-}
-
-:root.dark body {
-  background-color: var(--color-background-dark);
 }

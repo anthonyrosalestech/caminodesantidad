@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 md:py-20 bg-background-light dark:bg-background-dark/50">
+  <section class="py-12 md:py-20 bg-background-light">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
         <!-- Misión -->
@@ -9,10 +9,10 @@
               <MaterialIcon name="flag" class-name="text-3xl" />
             </div>
             <div>
-              <h3 class="text-2xl md:text-3xl font-bold text-[#111418] dark:text-white mb-4">
+              <h3 class="text-2xl md:text-3xl font-bold text-[#111418] mb-4">
                 {{ missionStatement.title }}
               </h3>
-              <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p class="text-lg text-gray-600 leading-relaxed">
                 {{ missionStatement.description }}
               </p>
             </div>
@@ -26,10 +26,10 @@
               <MaterialIcon name="visibility" class-name="text-3xl" />
             </div>
             <div>
-              <h3 class="text-2xl md:text-3xl font-bold text-[#111418] dark:text-white mb-4">
+              <h3 class="text-2xl md:text-3xl font-bold text-[#111418] mb-4">
                 {{ visionStatement.title }}
               </h3>
-              <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p class="text-lg text-gray-600 leading-relaxed">
                 {{ visionStatement.description }}
               </p>
             </div>

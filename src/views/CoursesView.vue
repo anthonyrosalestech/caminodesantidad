@@ -26,7 +26,7 @@
             :title="hasActiveFilters ? 'Resultados de Búsqueda' : 'Todos los Cursos'"
             size="lg" 
           />
-          <p class="mt-2 text-gray-600 dark:text-gray-300">
+          <p class="mt-2 text-gray-600">
             {{ filteredCourses.length }} {{ filteredCourses.length === 1 ? 'curso disponible' : 'cursos disponibles' }}
           </p>
         </div>

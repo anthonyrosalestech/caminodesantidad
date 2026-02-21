@@ -1,8 +1,8 @@
 <template>
-  <section class="py-12 md:py-20 bg-white dark:bg-background-dark">
+  <section class="py-12 md:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4">
       <SectionTitle title="Declaración de Fe" size="xl" class="text-center mb-4" />
-      <p class="text-center text-gray-600 dark:text-gray-300 mb-12">
+      <p class="text-center text-gray-600 mb-12">
         Las verdades bíblicas que creemos y confesamos
       </p>
 
@@ -19,10 +19,10 @@
               </div>
             </div>
             <div class="flex-1">
-              <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-2">
+              <h3 class="text-lg font-bold text-[#111418] mb-2">
                 {{ statement.title }}
               </h3>
-              <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p class="text-gray-600 leading-relaxed">
                 {{ statement.description }}
               </p>
             </div>

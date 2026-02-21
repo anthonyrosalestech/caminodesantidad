@@ -17,11 +17,11 @@
       v-else
       class="flex flex-col items-center justify-center py-16 text-center"
     >
-      <MaterialIcon name="search_off" class-name="mb-4 text-6xl text-gray-300 dark:text-gray-600" />
-      <h3 class="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-300">
+      <MaterialIcon name="search_off" class-name="mb-4 text-6xl text-gray-300" />
+      <h3 class="mb-2 text-xl font-semibold text-gray-700">
         No se encontraron cursos
       </h3>
-      <p class="text-gray-500 dark:text-gray-400">
+      <p class="text-gray-500">
         Intenta ajustar tus filtros o búsqueda
       </p>
     </div>
@@ -38,8 +38,8 @@
         :class="[
           'flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-all',
           currentPage === 1
-            ? 'cursor-not-allowed bg-gray-100 text-gray-400 dark:bg-gray-800 dark:text-gray-600'
-            : 'bg-white text-gray-700 shadow-sm hover:bg-gray-50 dark:bg-[#1c2127] dark:text-gray-300 dark:hover:bg-gray-700'
+            ? 'cursor-not-allowed bg-gray-100 text-gray-400'
+            : 'bg-white text-gray-700 shadow-sm hover:bg-gray-50'
         ]"
       >
         <MaterialIcon name="chevron_left" class-name="text-xl" />
@@ -56,7 +56,7 @@
             'h-10 w-10 rounded-lg text-sm font-medium transition-all',
             currentPage === page
               ? 'bg-primary text-white shadow-md'
-              : 'bg-white text-gray-700 hover:bg-gray-50 dark:bg-[#1c2127] dark:text-gray-300 dark:hover:bg-gray-700'
+              : 'bg-white text-gray-700 hover:bg-gray-50'
           ]"
         >
           {{ page }}
@@ -70,8 +70,8 @@
         :class="[
           'flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-all',
           currentPage === totalPages
-            ? 'cursor-not-allowed bg-gray-100 text-gray-400 dark:bg-gray-800 dark:text-gray-600'
-            : 'bg-white text-gray-700 shadow-sm hover:bg-gray-50 dark:bg-[#1c2127] dark:text-gray-300 dark:hover:bg-gray-700'
+            ? 'cursor-not-allowed bg-gray-100 text-gray-400'
+            : 'bg-white text-gray-700 shadow-sm hover:bg-gray-50'
         ]"
       >
         <span class="hidden sm:inline">Siguiente</span>
@@ -80,7 +80,7 @@
     </div>
 
     <!-- Results Info -->
-    <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+    <p class="text-center text-sm text-gray-500">
       Mostrando {{ startIndex + 1 }}-{{ Math.min(endIndex, courses.length) }} de {{ courses.length }} cursos
     </p>
   </div>

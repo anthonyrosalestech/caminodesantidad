@@ -19,7 +19,7 @@
         <div class="flex-1 space-y-4">
           <!-- Name and Role -->
           <div>
-            <h3 class="text-2xl font-bold text-[#111418] dark:text-white">
+            <h3 class="text-2xl font-bold text-[#111418]">
               {{ instructor.name }}
             </h3>
             <p class="text-lg text-primary">
@@ -28,20 +28,20 @@
           </div>
 
           <!-- Bio -->
-          <p class="text-gray-700 dark:text-gray-300">
+          <p class="text-gray-700">
             {{ instructor.bio || instructor.description }}
           </p>
 
           <!-- Specialties -->
           <div v-if="instructor.specialties && instructor.specialties.length > 0">
-            <p class="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-400">
+            <p class="mb-2 text-sm font-semibold text-gray-600">
               Especialidades:
             </p>
             <div class="flex flex-wrap gap-2">
               <span
                 v-for="(specialty, index) in instructor.specialties"
                 :key="index"
-                class="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary dark:bg-primary/20"
+                class="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary"
               >
                 {{ specialty }}
               </span>
@@ -49,11 +49,11 @@
           </div>
 
           <!-- Contact Info -->
-          <div class="flex flex-wrap gap-4 border-t border-gray-200 pt-4 dark:border-gray-700">
+          <div class="flex flex-wrap gap-4 border-t border-gray-200 pt-4">
             <a
               v-if="instructor.email"
               :href="`mailto:${instructor.email}`"
-              class="flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary"
+              class="flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-primary"
             >
               <MaterialIcon name="email" class-name="text-lg" />
               <span>{{ instructor.email }}</span>
@@ -61,7 +61,7 @@
             <a
               v-if="instructor.phone"
               :href="`tel:${instructor.phone}`"
-              class="flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary"
+              class="flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-primary"
             >
               <MaterialIcon name="phone" class-name="text-lg" />
               <span>{{ instructor.phone }}</span>

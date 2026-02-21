@@ -1,47 +1,53 @@
 <template>
-  <nav class="sticky top-0 z-50 flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between border-b border-gray-100 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
-      <!-- Logo y Título -->
-      <router-link to="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-        <div class="text-primary flex size-10 shrink-0 items-center justify-center bg-primary/10 rounded-lg">
-          <MaterialIcon name="church" />
+  <header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/90 px-4 py-4 backdrop-blur-md md:px-10 lg:px-20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+      <router-link to="/" class="flex items-center gap-3 transition-opacity hover:opacity-80">
+        <div class="text-primary">
+          <MaterialIcon name="church" class-name="text-4xl" />
         </div>
-        <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+        <h1 class="text-lg font-bold tracking-tight text-primary sm:text-xl">
           Iglesia Bautista
-        </h2>
+        </h1>
       </router-link>
 
-      <!-- Menú Desktop -->
-      <nav class="hidden md:flex items-center gap-6">
+      <nav class="hidden items-center gap-8 md:flex">
         <router-link
           v-for="link in navigationLinks"
           :key="link.path"
           :to="link.path"
-          class="text-[#111418] dark:text-white hover:text-primary dark:hover:text-blue-400 transition-colors font-medium"
-          active-class="text-primary dark:text-blue-400 font-bold"
+          class="text-sm font-medium transition-colors hover:text-primary"
+          active-class="text-primary font-bold"
         >
           {{ link.name }}
         </router-link>
       </nav>
 
-      <!-- Menú Mobile -->
-      <div class="flex md:hidden w-12 items-center justify-end">
+      <div class="flex items-center gap-2">
+        <AppButton
+          variant="primary"
+          size="sm"
+          class="hidden px-6 md:inline-flex"
+          @click="handleJoinClick"
+        >
+          Únete a Nosotros
+        </AppButton>
         <button
-          @click="toggleMenu"
-          class="flex cursor-pointer items-center justify-center rounded-xl h-10 w-10 bg-transparent text-[#111418] dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          class="flex h-10 w-10 items-center justify-center rounded-lg text-primary transition-colors hover:bg-primary/10 md:hidden"
           aria-label="Menú"
+          @click="toggleMenu"
         >
           <MaterialIcon name="menu" />
         </button>
       </div>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import MaterialIcon from '../ui/MaterialIcon.vue'
 import { navigationLinks } from '../../../constants/navigation'
+import AppButton from '../ui/AppButton.vue'
 
 /**
  * Barra de navegación responsive
@@ -54,5 +60,9 @@ const isMenuOpen = ref(false)
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
   emit('toggle-menu', isMenuOpen.value)
+}
+
+const handleJoinClick = () => {
+  emit('join-click')
 }
 </script>

@@ -5,11 +5,11 @@
         <MaterialIcon :name="icon" class-name="text-primary text-5xl md:text-6xl" />
       </div>
       
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#111418] dark:text-white leading-tight mb-4">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#111418] leading-tight mb-4">
         {{ title }}
       </h1>
       
-      <p v-if="subtitle" class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+      <p v-if="subtitle" class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
         {{ subtitle }}
       </p>
     </div>
@@ -38,7 +38,7 @@ defineProps({
   },
   backgroundClass: {
     type: String,
-    default: 'bg-background-light dark:bg-background-dark',
+    default: 'bg-background-light',
   },
 })
 </script>

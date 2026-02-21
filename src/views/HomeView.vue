@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
     <!-- Navigation -->
-    <NavBar @toggle-menu="handleMenuToggle" />
+    <NavBar @toggle-menu="handleMenuToggle" @join-click="handleJoinClick" />
 
     <!-- Hero Section -->
     <HeroSection

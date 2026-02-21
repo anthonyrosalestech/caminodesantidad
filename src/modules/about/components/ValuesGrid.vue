@@ -1,8 +1,8 @@
 <template>
-  <section class="py-12 md:py-20 bg-white dark:bg-background-dark">
+  <section class="py-12 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4">
       <SectionTitle title="Nuestros Valores" size="xl" class="text-center mb-4" />
-      <p class="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
         Los principios fundamentales que guían nuestro servicio y ministerio
       </p>
 
@@ -18,10 +18,10 @@
               <MaterialIcon :name="value.icon" class-name="text-4xl" />
             </div>
             <div>
-              <h3 class="text-xl font-bold text-[#111418] dark:text-white mb-2">
+              <h3 class="text-xl font-bold text-[#111418] mb-2">
                 {{ value.title }}
               </h3>
-              <p class="text-gray-600 dark:text-gray-300">
+              <p class="text-gray-600">
                 {{ value.description }}
               </p>
             </div>

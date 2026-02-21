@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-gradient-to-br from-accent-gold/5 to-white py-12 dark:from-accent-gold/10 dark:to-[#111418] md:py-16">
+  <section class="w-full bg-gradient-to-br from-accent-gold/5 to-white py-12 md:py-16">
     <div class="mx-auto max-w-7xl px-4">
       <!-- Section Header -->
       <div class="mb-8 text-center md:mb-12">
@@ -9,7 +9,7 @@
           </div>
         </div>
         <SectionTitle title="Cursos Destacados" size="lg" />
-        <p class="mt-4 text-gray-600 dark:text-gray-300">
+        <p class="mt-4 text-gray-600">
           Los cursos más populares para tu crecimiento espiritual
         </p>
       </div>
@@ -31,8 +31,8 @@
         v-else
         class="flex flex-col items-center justify-center py-12 text-center"
       >
-        <MaterialIcon name="school" class-name="mb-4 text-6xl text-gray-300 dark:text-gray-600" />
-        <p class="text-gray-500 dark:text-gray-400">
+        <MaterialIcon name="school" class-name="mb-4 text-6xl text-gray-300" />
+        <p class="text-gray-500">
           No hay cursos destacados disponibles en este momento
         </p>
       </div>

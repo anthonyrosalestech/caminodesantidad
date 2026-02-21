@@ -14,19 +14,19 @@ export function useSchedule() {
       id: 1,
       day: 'Domingo',
       activity: 'Servicio General',
-      time: '10:00 AM',
+      time: '9:30 AM',
     },
     {
       id: 2,
       day: 'Miércoles',
       activity: 'Estudio Bíblico',
-      time: '7:00 PM',
+      time: '7:30 PM',
     },
     {
       id: 3,
-      day: 'Viernes',
+      day: 'Sábado',
       activity: 'Reunión de Jóvenes',
-      time: '7:30 PM',
+      time: '6:30 PM',
     },
   ])
 

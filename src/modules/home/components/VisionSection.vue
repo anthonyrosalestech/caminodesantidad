@@ -1,15 +1,15 @@
 <template>
-  <section class="py-8 md:py-16 bg-white dark:bg-background-dark">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex flex-col items-center">
-        <MaterialIcon name="auto_awesome" class-name="text-accent-gold text-4xl md:text-5xl mb-2 md:mb-4" />
-        <h2 class="text-primary dark:text-blue-400 tracking-light text-[28px] md:text-4xl font-bold leading-tight px-4 text-center pb-2">
-          {{ title }}
-        </h2>
-        <p class="text-[#111418] dark:text-gray-300 text-base md:text-lg font-normal leading-relaxed pb-3 pt-1 px-8 text-center max-w-lg md:max-w-3xl">
-          {{ description }}
-        </p>
+  <section class="bg-[#f5efeb] px-4 py-16 sm:py-20">
+    <div class="mx-auto max-w-4xl text-center">
+      <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+        <MaterialIcon name="auto_awesome" class-name="text-3xl" />
       </div>
+      <h2 class="text-3xl font-black tracking-tight text-primary sm:text-4xl">
+        {{ title }}
+      </h2>
+      <p class="mt-5 text-base leading-loose text-slate-700 sm:text-lg">
+        {{ description }}
+      </p>
     </div>
   </section>
 </template>

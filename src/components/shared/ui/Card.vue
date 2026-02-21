@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white dark:bg-background-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-200"
+    class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200"
     :class="[paddingClass, clickableClass]"
     @click="handleClick"
   >

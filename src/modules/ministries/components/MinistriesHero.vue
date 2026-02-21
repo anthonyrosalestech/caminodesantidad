@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full bg-gradient-to-br from-primary/10 via-white to-accent-gold/5 py-16 dark:from-primary/20 dark:via-[#111418] dark:to-accent-gold/10 md:py-24">
+  <div class="relative w-full bg-gradient-to-br from-primary/10 via-white to-accent-gold/5 py-16 md:py-24">
     <div class="mx-auto max-w-4xl px-4 text-center">
       <!-- Icon -->
       <div class="mb-6 flex justify-center">
@@ -9,12 +9,12 @@
       </div>
 
       <!-- Title -->
-      <h1 class="mb-4 text-3xl font-bold text-[#111418] dark:text-white md:text-4xl lg:text-5xl">
+      <h1 class="mb-4 text-3xl font-bold text-[#111418] md:text-4xl lg:text-5xl">
         Nuestros Ministerios
       </h1>
 
       <!-- Subtitle -->
-      <p class="mb-8 text-base text-gray-600 dark:text-gray-300 md:text-lg lg:text-xl">
+      <p class="mb-8 text-base text-gray-600 md:text-lg lg:text-xl">
         Descubre dónde puedes servir y crecer en tu fe. 
         Hay un lugar para ti en nuestra iglesia.
       </p>
@@ -25,24 +25,24 @@
           <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
             <MaterialIcon name="groups" class-name="text-2xl text-primary" />
           </div>
-          <p class="text-2xl font-bold text-[#111418] dark:text-white md:text-3xl">7</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Ministerios Activos</p>
+          <p class="text-2xl font-bold text-[#111418] md:text-3xl">7</p>
+          <p class="text-sm text-gray-600">Ministerios Activos</p>
         </div>
 
         <div class="flex flex-col items-center">
           <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-accent-gold/10">
             <MaterialIcon name="favorite" class-name="text-2xl text-accent-gold" />
           </div>
-          <p class="text-2xl font-bold text-[#111418] dark:text-white md:text-3xl">200+</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Voluntarios</p>
+          <p class="text-2xl font-bold text-[#111418] md:text-3xl">200+</p>
+          <p class="text-sm text-gray-600">Voluntarios</p>
         </div>
 
         <div class="col-span-2 flex flex-col items-center md:col-span-1">
-          <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-            <MaterialIcon name="check_circle" class-name="text-2xl text-green-600 dark:text-green-400" />
+          <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+            <MaterialIcon name="check_circle" class-name="text-2xl text-green-600" />
           </div>
-          <p class="text-2xl font-bold text-[#111418] dark:text-white md:text-3xl">Todas</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Las Edades</p>
+          <p class="text-2xl font-bold text-[#111418] md:text-3xl">Todas</p>
+          <p class="text-sm text-gray-600">Las Edades</p>
         </div>
       </div>
     </div>

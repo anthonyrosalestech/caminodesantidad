@@ -1,44 +1,56 @@
 <template>
-  <div class="w-full">
-    <div
-      class="flex min-h-[520px] md:min-h-[600px] lg:min-h-[700px] flex-col gap-6 md:gap-8 bg-cover bg-center bg-no-repeat items-center justify-center p-6 md:p-12 text-center"
-      :style="backgroundStyle"
-    >
-      <div class="flex flex-col gap-3 md:gap-4">
-        <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-[-0.033em]">
-          {{ title }}
-        </h1>
-        <p class="text-white/90 text-base md:text-lg font-normal leading-normal max-w-[320px] md:max-w-[600px] mx-auto">
-          {{ description }}
-        </p>
-      </div>
+  <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden sm:min-h-[78vh] lg:min-h-[85vh]">
+    <div class="absolute inset-0">
+      <img
+        :src="backgroundImage"
+        :alt="backgroundAlt"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      />
+    </div>
 
-      <div class="flex flex-col md:flex-row gap-3 md:gap-4 w-full max-w-[280px] md:max-w-none justify-center">
+    <div class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-4 text-center">
+      <h1 class="text-4xl font-black leading-tight tracking-tight text-white drop-shadow-lg sm:text-5xl md:text-6xl lg:text-7xl">
+        {{ title }}
+      </h1>
+      <p class="mt-5 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg md:text-xl">
+        {{ description }}
+      </p>
+
+      <div class="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
         <AppButton
           variant="primary"
+          size="lg"
           :full-width="true"
+          class="px-8"
           @click="$emit('join-click')"
-          class="md:min-w-[200px] md:max-w-[240px]"
         >
-          <span class="truncate">{{ primaryButtonText }}</span>
+          <span class="flex items-center gap-2">
+            <MaterialIcon name="group" class-name="text-xl" />
+            {{ primaryButtonText }}
+          </span>
         </AppButton>
 
         <AppButton
           variant="secondary"
+          size="lg"
           :full-width="true"
+          class="px-8"
           @click="$emit('live-click')"
-          class="md:min-w-[200px] md:max-w-[240px]"
         >
-          <span class="truncate">{{ secondaryButtonText }}</span>
+          <span class="flex items-center gap-2">
+            <MaterialIcon name="live_tv" class-name="text-xl" />
+            {{ secondaryButtonText }}
+          </span>
         </AppButton>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import AppButton from '../../../components/shared/ui/AppButton.vue'
+import MaterialIcon from '../../../components/shared/ui/MaterialIcon.vue'
 
 /**
  * Sección Hero con imagen de fondo y CTA
@@ -55,7 +67,11 @@ const props = defineProps({
   },
   backgroundImage: {
     type: String,
-    default: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA9IFyvlrZOf98TrKQlPcNlM35qm71ey72j-2CNxziFz4EshNgW1fpHk3OM7qjeSx8aejWlcaqSpryLYsdL24VvtcauQqzTx6Ujs5GKh6Lh9x2o1WnWb6pzoAl_xHDJ4U7jryS3fMn02EOYn6_WGlpeYWK9rVTSYQZKAe2pX6wJzJBnr3OEtoTwZDxZ1uq1bAJOerI74J2EJpv33sbnyqGjd6WyZC_DL9aYgb-nFAgxGseMf4GF1uzy-8zAMbQlfgb4CxUiHGUqP2g',
+    default: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB1LKBtvrItSAjX35lwU00FYvsJeemc_0sB4Rv-j5GDyT1XQCfRyiBFW2TlmwYBy784xDM3L_1aBVgwvSvuKuF2ILbJjNeCc9xc544zXkx7fRUAyW8nkNUhHnSGupv6llD6zJlhVFvwblUxP6Z7z_FvfXEsUIOvi5ysCKtg4Vq08iQFh_pZtxhpdEegR8rd-8pSZMqzSuBdgYklw-EyrwGfWsRKYORavJyZcwQdlT1-egb1PR8SdHjyJmtLPt-hGswGpdu2LmzxJ5rv',
+  },
+  backgroundAlt: {
+    type: String,
+    default: 'Interior de una iglesia con iluminación cálida',
   },
   primaryButtonText: {
     type: String,
@@ -69,7 +85,4 @@ const props = defineProps({
 
 defineEmits(['join-click', 'live-click'])
 
-const backgroundStyle = computed(() => ({
-  backgroundImage: `linear-gradient(rgba(15, 102, 189, 0.6) 0%, rgba(16, 25, 34, 0.8) 100%), url("${props.backgroundImage}")`,
-}))
 </script>

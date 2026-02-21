@@ -11,10 +11,10 @@
     <div class="flex-1 flex items-center justify-center p-12">
       <div class="text-center">
         <MaterialIcon name="construction" class-name="text-primary text-6xl mb-4" />
-        <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-2">
+        <h2 class="text-2xl font-bold text-[#111418] mb-2">
           Vista en construcción
         </h2>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="text-gray-600">
           Esta página estará disponible próximamente
         </p>
       </div>

@@ -12,17 +12,17 @@
         <!-- Module Header (Clickable) -->
         <button
           @click="toggleModule(index)"
-          class="flex w-full items-center justify-between bg-gray-50 p-4 text-left transition-colors hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700"
+          class="flex w-full items-center justify-between bg-gray-50 p-4 text-left transition-colors hover:bg-gray-100"
         >
           <div class="flex items-center gap-3">
             <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
               <MaterialIcon name="folder" class-name="text-xl" />
             </div>
             <div>
-              <h3 class="font-semibold text-[#111418] dark:text-white">
+              <h3 class="font-semibold text-[#111418]">
                 {{ module.module }}
               </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
+              <p class="text-sm text-gray-500">
                 {{ module.lessons.length }} {{ module.lessons.length === 1 ? 'lección' : 'lecciones' }}
               </p>
             </div>
@@ -42,23 +42,23 @@
           leave-from-class="max-h-screen opacity-100"
           leave-to-class="max-h-0 opacity-0"
         >
-          <div v-show="expandedModules[index]" class="border-t border-gray-200 dark:border-gray-700">
-            <ul class="divide-y divide-gray-100 dark:divide-gray-800">
+          <div v-show="expandedModules[index]" class="border-t border-gray-200">
+            <ul class="divide-y divide-gray-100">
               <li
                 v-for="(lesson, lessonIndex) in module.lessons"
                 :key="lessonIndex"
-                class="flex items-center justify-between p-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50"
+                class="flex items-center justify-between p-4 transition-colors hover:bg-gray-50"
               >
                 <div class="flex items-center gap-3">
                   <MaterialIcon 
                     :name="getLessonIcon(lesson.type)"
                     class-name="text-xl text-gray-400"
                   />
-                  <span class="text-sm text-gray-700 dark:text-gray-300">
+                  <span class="text-sm text-gray-700">
                     {{ lesson.title }}
                   </span>
                 </div>
-                <span class="text-sm text-gray-500 dark:text-gray-400">
+                <span class="text-sm text-gray-500">
                   {{ lesson.duration }}
                 </span>
               </li>
@@ -71,15 +71,15 @@
     <!-- Empty State -->
     <Card v-else padding="lg">
       <div class="flex flex-col items-center justify-center py-8 text-center">
-        <MaterialIcon name="folder_off" class-name="mb-3 text-5xl text-gray-300 dark:text-gray-600" />
-        <p class="text-gray-500 dark:text-gray-400">
+        <MaterialIcon name="folder_off" class-name="mb-3 text-5xl text-gray-300" />
+        <p class="text-gray-500">
           El contenido del curso estará disponible próximamente
         </p>
       </div>
     </Card>
 
     <!-- Total Duration -->
-    <div v-if="totalDuration" class="flex items-center justify-end gap-2 text-sm text-gray-600 dark:text-gray-400">
+    <div v-if="totalDuration" class="flex items-center justify-end gap-2 text-sm text-gray-600">
       <MaterialIcon name="schedule" class-name="text-lg" />
       <span>Duración total: {{ totalDuration }}</span>
     </div>

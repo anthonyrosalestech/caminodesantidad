@@ -1,6 +1,6 @@
 <template>
   <h2 
-    class="text-[#111418] dark:text-white font-bold leading-tight tracking-[-0.015em]"
+    class="text-[#111418] font-bold leading-tight tracking-[-0.015em]"
     :class="sizeClass"
   >
     <slot>{{ title }}</slot>

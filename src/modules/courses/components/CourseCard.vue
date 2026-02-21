@@ -1,25 +1,41 @@
 <template>
-  <div class="flex flex-col gap-3 group cursor-pointer" @click="$emit('click', course)">
-    <!-- Video Thumbnail -->
-    <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-gray-200">
-      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-        <MaterialIcon name="play_circle" class-name="text-white text-5xl" />
+  <div
+    class="overflow-hidden rounded-xl border border-slate-100 bg-white shadow-md transition-all hover:shadow-xl"
+    @click="$emit('click', course)"
+  >
+    <div class="relative h-48 overflow-hidden">
+      <img
+        :src="course.thumbnail"
+        :alt="course.altText || course.title"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      />
+      <div v-if="course.badge" class="absolute left-4 top-4">
+        <span class="rounded-full bg-primary px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
+          {{ course.badge }}
+        </span>
       </div>
-      <div
-        class="h-full w-full bg-cover bg-center"
-        :style="{ backgroundImage: `url(${course.thumbnail})` }"
-        :data-alt="course.altText"
-      ></div>
     </div>
-
-    <!-- Course Info -->
-    <div class="flex flex-col gap-1">
-      <h3 class="text-[#111418] dark:text-white font-bold text-lg">
+    <div class="p-6">
+      <h3 class="mb-2 text-xl font-bold text-primary">
         {{ course.title }}
       </h3>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
+      <p class="mb-6 text-sm leading-relaxed text-slate-600">
         {{ course.description }}
       </p>
+      <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+        <span class="flex items-center gap-1 text-xs text-slate-500">
+          <MaterialIcon name="schedule" class-name="text-sm" />
+          {{ course.duration }}
+        </span>
+        <button
+          type="button"
+          class="text-sm font-bold text-primary transition-colors hover:text-primary/80"
+          @click.stop="$emit('click', course)"
+        >
+          Más Información
+        </button>
+      </div>
     </div>
   </div>
 </template>

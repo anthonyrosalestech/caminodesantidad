@@ -10,7 +10,7 @@
       <!-- Section Title -->
       <div class="mb-12 text-center">
         <SectionTitle title="Explora Nuestros Ministerios" size="lg" />
-        <p class="mt-4 text-gray-600 dark:text-gray-300">
+        <p class="mt-4 text-gray-600">
           Encuentra el ministerio que se alinea con tus dones y pasiones
         </p>
       </div>

@@ -3,8 +3,8 @@
     <SectionTitle title="Descripción del Curso" size="lg" />
     
     <Card padding="lg">
-      <div class="prose prose-lg max-w-none dark:prose-invert">
-        <p class="text-gray-700 dark:text-gray-300">
+      <div class="prose prose-lg max-w-none">
+        <p class="text-gray-700">
           {{ course.fullDescription || course.description }}
         </p>
       </div>
